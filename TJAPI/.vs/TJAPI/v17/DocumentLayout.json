@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\src\\TJAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\tjapi\\dto\\usertyperesult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:dto\\usertyperesult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\tjapi\\mapper\\configurationmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:mapper\\configurationmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\tjapi\\controllers\\usertypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:controllers\\usertypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\tjapi\\dto\\userresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:dto\\userresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\tjapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfigurationMapping.cs",
+              "DocumentMoniker": "C:\\src\\TJAPI\\Mapper\\ConfigurationMapping.cs",
+              "RelativeDocumentMoniker": "Mapper\\ConfigurationMapping.cs",
+              "ToolTip": "C:\\src\\TJAPI\\Mapper\\ConfigurationMapping.cs",
+              "RelativeToolTip": "Mapper\\ConfigurationMapping.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T18:55:29.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserTypeResult.cs",
+              "DocumentMoniker": "C:\\src\\TJAPI\\Dto\\UserTypeResult.cs",
+              "RelativeDocumentMoniker": "Dto\\UserTypeResult.cs",
+              "ToolTip": "C:\\src\\TJAPI\\Dto\\UserTypeResult.cs",
+              "RelativeToolTip": "Dto\\UserTypeResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T18:55:04.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserResult.cs",
+              "DocumentMoniker": "C:\\src\\TJAPI\\Dto\\UserResult.cs",
+              "RelativeDocumentMoniker": "Dto\\UserResult.cs",
+              "ToolTip": "C:\\src\\TJAPI\\Dto\\UserResult.cs",
+              "RelativeToolTip": "Dto\\UserResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T18:10:52.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserTypesController.cs",
+              "DocumentMoniker": "C:\\src\\TJAPI\\Controllers\\UserTypesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserTypesController.cs",
+              "ToolTip": "C:\\src\\TJAPI\\Controllers\\UserTypesController.cs",
+              "RelativeToolTip": "Controllers\\UserTypesController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwBsAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T03:43:18.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\src\\TJAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\src\\TJAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T21:32:00.588Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
