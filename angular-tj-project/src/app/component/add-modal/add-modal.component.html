@@ -1,0 +1,74 @@
+<h2>Adicionar usuário</h2>
+<mat-dialog-content>
+    <form novalidate [formGroup]="formulario" #formDirective="ngForm">
+        <div class="form-row">
+            <div fxFlex="100%">
+                <mat-form-field fxFlexFill>
+                    <mat-label>Nome</mat-label>
+                    <input matInput placeholder="" #nome id="nome" formControlName="nome" type="text">
+                    <mat-hint align="start">
+                        <mat-error *ngIf="isFieldValidated('nome')">Campo Obrigatório</mat-error>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+            <div fxFlex="100%">
+                <mat-form-field fxFlexFill>
+                    <mat-label>Matricula</mat-label>
+                    <input matInput placeholder="" #matricula id="matricula" formControlName="matricula" type="text">
+                    <mat-hint align="start">
+                        <mat-error *ngIf="isFieldValidated('matricula')">Campo Obrigatório</mat-error>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+            <div fxFlex="100%">
+                <mat-form-field fxFlexFill>
+                    <mat-label>E-mail</mat-label>
+                    <input matInput placeholder="teste@example.com" #email id="email" formControlName="email"
+                        type="text">
+                    <mat-hint align="start">
+                        <mat-error *ngIf="isFieldValidated('email')">{{getEmailErrorMessage()}}</mat-error>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+            <div fxFlex="100%">
+                <mat-form-field fxFlexFill>
+                    <mat-label>Origem</mat-label>
+                    <mat-select #origem id="origem" formControlName="origem">
+                        <mat-option [value]="0">Selecione</mat-option>
+                        <mat-option *ngFor="let type of defaults.types"
+                            [value]="type.id">{{type.description}}</mat-option>
+                    </mat-select>
+                    <mat-hint align="start">
+                        <mat-error *ngIf="isFieldValidated('origem')">Campo Obrigatório</mat-error>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+            <div fxFlex="100%">
+                <mat-form-field fxFlexFill>
+                    <mat-label>Data de Nascimento</mat-label>
+                    <input matInput [matDatepicker]="picker" #dataNascimento id="dataNascimento"
+                        formControlName="dataNascimento" placeholder="Selecione uma data" (click)="picker.open()">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                    <mat-hint align="start">
+                        <mat-error *ngIf="isFieldValidated('dataNascimento')">Campo Obrigatório</mat-error>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+        </div>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <div class="m-b-20 actions">
+        <div style="margin-bottom: -1px">
+            <button type="button" (click)="dialogRef.close()" mat-raised-button class="btn-secondary"
+                style="margin-right: 10px !important">
+                Cancelar</button>
+        </div>
+        <button type="button" mat-raised-button color="primary" class="btn-primary btn-disable"
+            [disabled]="!formulario.valid" (click)="save()">
+            <mat-icon class="icon-save">save</mat-icon>
+            <span class="btn-text">Salvar</span>
+        </button>
+    </div>
+</mat-dialog-actions>
