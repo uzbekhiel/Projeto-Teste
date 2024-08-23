@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  api_url: "https://localhost:44392/api/"
+  api_url: "https://localhost:44392/api/",
+  tokenKey: "tjproject-token"
 };
 
 /*

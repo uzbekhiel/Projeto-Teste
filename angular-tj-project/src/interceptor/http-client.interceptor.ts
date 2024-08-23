@@ -7,12 +7,13 @@ import { environment } from "src/environments/environment";
 export class httpClientInterceptor implements HttpInterceptor {
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         // add authorization header with jwt token if available
-
-        request = request.clone({
-            setHeaders: {
-                Authorization: `Basic ${btoa('admin@teste.com:123')}`,
-            }
-        });
+        const token = localStorage.getItem(environment.tokenKey);
+        if (token != null && token != undefined)
+            request = request.clone({
+                setHeaders: {
+                    Authorization: `Basic ${token}`,
+                }
+            });
 
         return next.handle(request);
     }

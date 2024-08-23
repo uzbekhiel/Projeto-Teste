@@ -1,0 +1,38 @@
+<h2>Login</h2>
+<mat-dialog-content>
+    <form novalidate [formGroup]="formulario" #formDirective="ngForm">
+        <div class="form-row">
+            <div fxFlex="100%">
+                <mat-form-field fxFlexFill>
+                    <mat-label>E-mail</mat-label>
+                    <input matInput placeholder="teste@example.com" #email id="email" formControlName="email"
+                        type="text">
+                    <mat-hint align="start">
+                        <mat-error *ngIf="isFieldValidated('email')">{{getEmailErrorMessage()}}</mat-error>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+            <div fxFlex="100%">
+                <mat-form-field fxFlexFill>
+                    <mat-label>Senha</mat-label>
+                    <input matInput placeholder="" #password id="password" formControlName="password" type="text">
+                    <mat-hint align="start">
+                        <mat-error *ngIf="isFieldValidated('password')">Campo Obrigatório</mat-error>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+        </div>
+    </form>
+    <div fxFlex="100%">
+        <mat-checkbox class="example-margin" [(ngModel)]="guest" (change)="setGuestAccess($event)">Entrar como
+            convidado</mat-checkbox>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <div class="m-b-20 actions">
+        <button type="button" mat-raised-button color="primary" class="btn-primary btn-disable"
+            [disabled]="!formulario.valid && !guest" (click)="login()">
+            <span class="btn-text">Login</span>
+        </button>
+    </div>
+</mat-dialog-actions>

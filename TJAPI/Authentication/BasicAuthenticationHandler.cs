@@ -10,11 +10,11 @@ namespace TJAPI.Authentication
 {
     public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSchemeOptions>
     {
-        private IUserService _userService;
+        private IAuthService _authService;
 
-        public BasicAuthenticationHandler(IOptionsMonitor<AuthenticationSchemeOptions> options, ILoggerFactory logger, UrlEncoder encoder, IUserService userService) : base(options, logger, encoder)
+        public BasicAuthenticationHandler(IOptionsMonitor<AuthenticationSchemeOptions> options, ILoggerFactory logger, UrlEncoder encoder, IAuthService authService) : base(options, logger, encoder)
         {
-            _userService = userService;
+            _authService = authService;
         }
 
         protected override Task<AuthenticateResult> HandleAuthenticateAsync()
@@ -45,8 +45,7 @@ namespace TJAPI.Authentication
 
             var userMail = split[0];
             var userSecret = split[1];
-            var user = _userService.GetBy(userMail);
-            if(userSecret != "123" && (user == null || userMail != "admin@teste.com"))
+            if(_authService.ValidateLogin(userMail, userSecret, out string token))
             {
                 return Task.FromResult(AuthenticateResult.Fail("Usuário inválido"));
             }

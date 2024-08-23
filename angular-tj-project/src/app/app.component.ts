@@ -1,9 +1,11 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddModalComponent } from './component/add-modal/add-modal.component';
 import { UsersService } from './services/users.service';
 import { TypesService } from './services/types.service';
+import { LoginModalComponent } from './component/login-modal/login-modal.component';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +17,8 @@ export class AppComponent implements OnInit {
   users: any = [];
   userTypes: any = [];
   selectedType = 0;
+  token: string;
+  loginicon = "lock_open"
 
   columnsToDisplay = ['nome', 'matricula', 'email', 'origem', 'dataNascimento'];
 
@@ -24,12 +28,22 @@ export class AppComponent implements OnInit {
     private _typesService: TypesService,
     private dialog: MatDialog,
   ) {
-    this.getTypes();
+  }
 
+  get isLoged() {
+    return this.token == null || this.token === undefined || this.token == 'null';
   }
 
   ngOnInit(): void {
-    this.getUsers();
+    this.token = localStorage.getItem(environment.tokenKey);
+    if (this.isLoged) {
+      this.openLogin();
+    }
+    else {
+      this.loginicon = "lock";
+      this.getTypes();
+      this.getUsers();
+    }
   }
 
   private getUsers(type = 0) {
@@ -62,7 +76,26 @@ export class AppComponent implements OnInit {
     });
   }
 
+  openLogin() {
+    if (this.isLoged) {
+      this.dialog.open(LoginModalComponent, {
+        width: '400px',
+        autoFocus: true,
+        disableClose: true
+      }).afterClosed().subscribe(() => {
+        this.loginicon = "lock";
+        this.getTypes();
+        this.getUsers(0)
+      });
+    }
+  }
 
-
-
+  exit() {
+    localStorage.setItem(environment.tokenKey, null);
+    this.loginicon = "lock_open";
+    this.token = null;
+    this.users = [];
+    this.userTypes = [];
+    this.openLogin();
+  }
 }

@@ -58,6 +58,7 @@ builder.Services.AddDbContext<DataContext>(
 builder.Services.AddScoped<DbContext,DbContext>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserTypeService, UserTypeService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddAutoMapper(typeof(ConfigurationMapping));
 
 builder.Services.AddAuthentication(x =>

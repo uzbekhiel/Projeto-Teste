@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { httpClientInterceptor } from 'src/interceptor/http-client.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MAT_DATE_LOCALE, MatButtonModule, MatDatepickerModule, MatFormFieldModule, MatIconModule, MatInputModule, MatNativeDateModule, MatSelectModule, MatTableModule, } from '@angular/material';
+import { MAT_DATE_LOCALE, MatButtonModule, MatCheckboxModule, MatDatepickerModule, MatFormFieldModule, MatIconModule, MatInputModule, MatNativeDateModule, MatSelectModule, MatTableModule, } from '@angular/material';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { AddModalComponent } from './component/add-modal/add-modal.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UsersService } from './services/users.service';
 import { TypesService } from './services/types.service';
+import { LoginModalComponent } from './component/login-modal/login-modal.component';
+import { AuthService } from './services/auth.service';
 
 const MY_FORMATS = {
   parse: {
@@ -43,12 +45,14 @@ const MY_FORMATS = {
     MatIconModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatCheckboxModule,
   ],
   declarations: [
     AppComponent,
     AddModalComponent,
+    LoginModalComponent,
   ],
-  entryComponents: [AddModalComponent],
+  entryComponents: [AddModalComponent, LoginModalComponent],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
@@ -58,6 +62,7 @@ const MY_FORMATS = {
     { provide: MAT_DIALOG_DATA, useValue: {} },
     UsersService,
     TypesService,
+    AuthService,
     MatDatepickerModule,
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
   ],

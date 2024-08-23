@@ -35,7 +35,11 @@ namespace TJAPI.Controllers
             return Ok(_service.GetUsers().Where(x=> tipo == 0 || (tipo != 0 && x.ID_TIPOUSUARIO == tipo)).Select(x => _mapper.Map<UserResult>(x)));
         }
 
-        // GET: api/Users/5
+        /// <summary>
+        /// Recupera um único usuário a partir do identificador do usuário
+        /// </summary>
+        /// <param name="id">Id do usuário para pesquisa</param>
+        /// <returns></returns>
         [HttpGet("{id}"), BasicAuthorization]
         public async Task<ActionResult<UserResult>> GetUser(int id)
         {
@@ -49,8 +53,11 @@ namespace TJAPI.Controllers
             }            
         }
 
-        // POST: api/Users
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        /// <summary>
+        /// Adiciona um usuário de acordo com o comando de entrada
+        /// </summary>
+        /// <param name="user">Comando com os dados necessários para inclusão de um usuário</param>
+        /// <returns></returns>
         [HttpPost, BasicAuthorization]
         public async Task<ActionResult<User>> PostUser(UserCommand user)
         {
