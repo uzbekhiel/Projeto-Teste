@@ -3,44 +3,24 @@
   "WorkspaceRootPath": "C:\\src\\Projeto-Teste\\TJAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\mapper\\configurationmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:mapper\\configurationmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\authentication\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:authentication\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\service\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:service\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\dto\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:dto\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\service\\usertypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:service\\usertypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\dto\\usertyperesult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:dto\\usertyperesult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\mapper\\configurationmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:mapper\\configurationmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\controllers\\usertypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:controllers\\usertypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|c:\\src\\projeto-teste\\tjapi\\dto\\userresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{558B2625-5902-4457-91D5-10F83D6B666D}|TJAPI.csproj|solutionrelative:dto\\userresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,133 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\src\\Projeto-Teste\\TJAPI\\Service\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "Service\\Interfaces\\IAuthService.cs",
-              "ToolTip": "C:\\src\\Projeto-Teste\\TJAPI\\Service\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "Service\\Interfaces\\IAuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T13:36:43.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\src\\Projeto-Teste\\TJAPI\\Service\\AuthService.cs",
-              "RelativeDocumentMoniker": "Service\\AuthService.cs",
-              "ToolTip": "C:\\src\\Projeto-Teste\\TJAPI\\Service\\AuthService.cs",
-              "RelativeToolTip": "Service\\AuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T13:35:57.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginCommand.cs",
-              "DocumentMoniker": "C:\\src\\Projeto-Teste\\TJAPI\\Dto\\LoginCommand.cs",
-              "RelativeDocumentMoniker": "Dto\\LoginCommand.cs",
-              "ToolTip": "C:\\src\\Projeto-Teste\\TJAPI\\Dto\\LoginCommand.cs",
-              "RelativeToolTip": "Dto\\LoginCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T13:34:17.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\src\\Projeto-Teste\\TJAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\src\\Projeto-Teste\\TJAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T13:30:25.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BasicAuthenticationHandler.cs",
-              "DocumentMoniker": "C:\\src\\Projeto-Teste\\TJAPI\\Authentication\\BasicAuthenticationHandler.cs",
-              "RelativeDocumentMoniker": "Authentication\\BasicAuthenticationHandler.cs",
-              "ToolTip": "C:\\src\\Projeto-Teste\\TJAPI\\Authentication\\BasicAuthenticationHandler.cs",
-              "RelativeToolTip": "Authentication\\BasicAuthenticationHandler.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwDEAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T13:30:00.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "ConfigurationMapping.cs",
               "DocumentMoniker": "C:\\src\\Projeto-Teste\\TJAPI\\Mapper\\ConfigurationMapping.cs",
               "RelativeDocumentMoniker": "Mapper\\ConfigurationMapping.cs",
               "ToolTip": "C:\\src\\Projeto-Teste\\TJAPI\\Mapper\\ConfigurationMapping.cs",
               "RelativeToolTip": "Mapper\\ConfigurationMapping.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T18:55:29.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserTypeResult.cs",
-              "DocumentMoniker": "C:\\src\\Projeto-Teste\\TJAPI\\Dto\\UserTypeResult.cs",
-              "RelativeDocumentMoniker": "Dto\\UserTypeResult.cs",
-              "ToolTip": "C:\\src\\Projeto-Teste\\TJAPI\\Dto\\UserTypeResult.cs",
-              "RelativeToolTip": "Dto\\UserTypeResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T18:55:04.28Z",
+              "WhenOpened": "2024-08-26T15:17:20.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserResult.cs",
-              "DocumentMoniker": "C:\\src\\Projeto-Teste\\TJAPI\\Dto\\UserResult.cs",
-              "RelativeDocumentMoniker": "Dto\\UserResult.cs",
-              "ToolTip": "C:\\src\\Projeto-Teste\\TJAPI\\Dto\\UserResult.cs",
-              "RelativeToolTip": "Dto\\UserResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\src\\Projeto-Teste\\TJAPI\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "Service\\UserService.cs",
+              "ToolTip": "C:\\src\\Projeto-Teste\\TJAPI\\Service\\UserService.cs",
+              "RelativeToolTip": "Service\\UserService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwB0AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T18:10:52.263Z"
+              "WhenOpened": "2024-08-26T15:16:41.17Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
+              "Title": "UserTypeService.cs",
+              "DocumentMoniker": "C:\\src\\Projeto-Teste\\TJAPI\\Service\\UserTypeService.cs",
+              "RelativeDocumentMoniker": "Service\\UserTypeService.cs",
+              "ToolTip": "C:\\src\\Projeto-Teste\\TJAPI\\Service\\UserTypeService.cs",
+              "RelativeToolTip": "Service\\UserTypeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T15:16:38.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UserTypesController.cs",
               "DocumentMoniker": "C:\\src\\Projeto-Teste\\TJAPI\\Controllers\\UserTypesController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserTypesController.cs",
               "ToolTip": "C:\\src\\Projeto-Teste\\TJAPI\\Controllers\\UserTypesController.cs",
               "RelativeToolTip": "Controllers\\UserTypesController.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAqwBsAAABDAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T03:43:18.378Z"
+              "WhenOpened": "2024-08-26T15:15:41.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\src\\Projeto-Teste\\TJAPI\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\src\\Projeto-Teste\\TJAPI\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwDwAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T21:32:00.588Z",
+              "WhenOpened": "2024-08-26T15:15:35.518Z",
               "EditorCaption": ""
             }
           ]

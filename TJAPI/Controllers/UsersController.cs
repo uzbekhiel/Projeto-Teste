@@ -41,11 +41,11 @@ namespace TJAPI.Controllers
         /// <param name="id">Id do usuário para pesquisa</param>
         /// <returns></returns>
         [HttpGet("{id}"), BasicAuthorization]
-        public async Task<ActionResult<UserResult>> GetUser(int id)
+        public async Task<ActionResult<UserCommand>> GetUser(int id)
         {
             try
             {
-                return _mapper.Map<UserResult>(_service.Get(id));
+                return _mapper.Map<UserCommand>(_service.Get(id));
             }
             catch (Exception e)
             {

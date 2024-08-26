@@ -1,0 +1,5 @@
+<h2 class="modal-delete">{{ confirmMsg }}</h2>
+<mat-dialog-actions align="end">
+    <button mat-button (click)="dialogRef.close('No!')" class="btn-secondary">Não</button>
+    <button mat-button color="primary" (click)="dialogRef.close('Yes!')" class="btn-primary">Sim</button>
+</mat-dialog-actions>

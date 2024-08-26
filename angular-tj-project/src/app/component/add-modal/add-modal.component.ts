@@ -11,6 +11,7 @@ import { UsersService } from 'src/app/services/users.service';
 export class AddModalComponent implements OnInit {
 
   formulario: FormGroup;
+  user = null;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public defaults: any,
@@ -20,6 +21,26 @@ export class AddModalComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.initForm();
+    if (this.defaults.user != null) {
+      this._usersService.getUser(this.defaults.user.id).then(
+        (r: any) => {
+          this.user = r;
+          this.formulario.patchValue(
+            {
+              nome: this.user.nome,
+              matricula: this.user.matricula,
+              email: this.user.email,
+              origem: this.user.user_Type,
+              dataNascimento: this.user.dataNascimento,
+            }
+          );
+        }
+      )
+    }
+  }
+
+  private initForm() {
     this.formulario = this.formBuilder.group({
       nome: [null, [Validators.required]],
       matricula: [null, [Validators.required]],
@@ -30,6 +51,25 @@ export class AddModalComponent implements OnInit {
   }
 
   save() {
+
+    if (this.user != null) {
+      this.user.nome = this.formulario.get('nome').value,
+        this.user.email = this.formulario.get('email').value,
+        this.user.matricula = this.formulario.get('matricula').value,
+        this.user.user_Type = this.formulario.get('origem').value,
+        this.user.dataNascimento = this.formulario.get('dataNascimento').value,
+        this.user.origem = this.defaults.types.filter(x => x.id == this.formulario.get('origem').value)[0].sigla
+
+      this._usersService.updateUser(this.user.id, this.user)
+        .then(() => {
+          this.dialogRef.close();
+        });
+    } else {
+      this.addUser();
+    }
+  }
+
+  private addUser() {
     const model = {
       nome: this.formulario.get('nome').value,
       email: this.formulario.get('email').value,
@@ -37,7 +77,7 @@ export class AddModalComponent implements OnInit {
       user_Type: this.formulario.get('origem').value,
       dataNascimento: this.formulario.get('dataNascimento').value,
       origem: this.defaults.types.filter(x => x.id == this.formulario.get('origem').value)[0].sigla
-    }
+    };
 
     this._usersService.saveUsers(model)
       .then(() => {

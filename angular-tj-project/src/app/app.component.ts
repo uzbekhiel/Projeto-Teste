@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Inject, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { AddModalComponent } from './component/add-modal/add-modal.component';
 import { UsersService } from './services/users.service';
 import { TypesService } from './services/types.service';
 import { LoginModalComponent } from './component/login-modal/login-modal.component';
 import { environment } from 'src/environments/environment';
+import { ConfirmModalComponent } from './component/confirm-modal/confirm-modal.component';
 
 @Component({
   selector: 'app-root',
@@ -19,8 +20,11 @@ export class AppComponent implements OnInit {
   selectedType = 0;
   token: string;
   loginicon = "lock_open"
+  typeSelected = 0;
 
-  columnsToDisplay = ['nome', 'matricula', 'email', 'origem', 'dataNascimento'];
+  columnsToDisplay = ['nome', 'matricula', 'email', 'origem', 'dataNascimento', 'actions'];
+
+  public dialogRef: MatDialogRef<ConfirmModalComponent>;
 
   constructor(
     @Inject(HttpClient) private httpClient: HttpClient,
@@ -67,13 +71,7 @@ export class AppComponent implements OnInit {
   }
 
   openDialog(): void {
-    this.dialog.open(AddModalComponent, {
-      width: '500px',
-      autoFocus: true,
-      data: { types: this.userTypes }
-    }).afterClosed().subscribe(() => {
-      this.getUsers(this.selectedType)
-    });
+    this.openUserAddModal(null);
   }
 
   openLogin() {
@@ -97,5 +95,39 @@ export class AppComponent implements OnInit {
     this.users = [];
     this.userTypes = [];
     this.openLogin();
+  }
+
+  edit(user) {
+    this.openUserAddModal(user);
+  }
+
+  private openUserAddModal(user: any) {
+    this.dialog.open(AddModalComponent, {
+      width: '500px',
+      autoFocus: true,
+      data: { types: this.userTypes, user: user },
+      disableClose: true
+    }).afterClosed().subscribe(() => {
+      this.getUsers(this.selectedType);
+    });
+  }
+
+  remove(user) {
+    this.dialogRef = this.dialog.open(ConfirmModalComponent, {
+      disableClose: false,
+    });
+
+    this.dialogRef.componentInstance.confirmMsg = "Deseja excluir este usuário?";
+
+    this.dialogRef.afterClosed().subscribe((result) => {
+      if (result === "Yes!") {
+        this._usersService.deleteUser(user.id).then(
+          () => {
+            this.getUsers(this.selectedType)
+          }
+        )
+      }
+      this.dialogRef = null;
+    });
   }
 }

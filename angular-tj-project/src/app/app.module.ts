@@ -15,6 +15,7 @@ import { UsersService } from './services/users.service';
 import { TypesService } from './services/types.service';
 import { LoginModalComponent } from './component/login-modal/login-modal.component';
 import { AuthService } from './services/auth.service';
+import { ConfirmModalComponent } from './component/confirm-modal/confirm-modal.component';
 
 const MY_FORMATS = {
   parse: {
@@ -51,8 +52,9 @@ const MY_FORMATS = {
     AppComponent,
     AddModalComponent,
     LoginModalComponent,
+    ConfirmModalComponent,
   ],
-  entryComponents: [AddModalComponent, LoginModalComponent],
+  entryComponents: [AddModalComponent, LoginModalComponent, ConfirmModalComponent],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,

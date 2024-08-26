@@ -21,7 +21,7 @@ namespace TJAPI.Mapper
                 .ForMember(dest => dest.ID_TIPOUSUARIO, opt => opt.MapFrom(src => src.User_Type))
                 .ForMember(dest => dest.ORIGEM, opt => opt.MapFrom(src => src.Origem))
                 .ForMember(dest => dest.DATA_NASC, opt => opt.MapFrom(src => src.DataNascimento))
-                .ForMember(dest => dest.MATR_USU, opt => opt.MapFrom(src => src.Matricula));
+                .ForMember(dest => dest.MATR_USU, opt => opt.MapFrom(src => src.Matricula)).ReverseMap();
 
             CreateMap<UserType, UserTypeResult>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.ID_TIPOUSUARIO))

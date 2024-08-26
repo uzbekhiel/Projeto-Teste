@@ -287,3 +287,8 @@ svg#clouds {
 table {
     width: 100%;
 }
+
+mat-icon {
+    margin-right: 12px;
+    cursor: pointer
+}

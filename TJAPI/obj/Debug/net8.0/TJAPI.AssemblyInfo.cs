@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TJAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5f3c543ab376cfdfc3b273a66db0a8fd567408e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a7ab618d66c4162f6dff1f67b5e482fb21a4229")]
 [assembly: System.Reflection.AssemblyProductAttribute("TJAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TJAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

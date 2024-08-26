@@ -15,4 +15,16 @@ export class UsersService {
     public saveUsers(model: any) {
         return this.httpClient.post(`${environment.api_url}Users`, model).toPromise();
     }
+
+    public deleteUser(id: number) {
+        return this.httpClient.delete(`${environment.api_url}Users/${id}`).toPromise();
+    }
+
+    public getUser(id: number) {
+        return this.httpClient.get(`${environment.api_url}Users/${id}`).toPromise();
+    }
+
+    public updateUser(id: number, model: any) {
+        return this.httpClient.put(`${environment.api_url}Users/${id}`, model).toPromise();
+    }
 }
