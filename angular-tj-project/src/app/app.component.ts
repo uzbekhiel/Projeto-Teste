@@ -40,14 +40,14 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.token = localStorage.getItem(environment.tokenKey);
-    if (this.isLoged) {
-      this.openLogin();
-    }
-    else {
-      this.loginicon = "lock";
-      this.getTypes();
-      this.getUsers();
-    }
+    // if (this.isLoged) {
+    //   this.openLogin();
+    // }
+    // else {
+    //   this.loginicon = "lock";
+    //   this.getTypes();
+    //   this.getUsers();
+    // }
   }
 
   private getUsers(type = 0) {

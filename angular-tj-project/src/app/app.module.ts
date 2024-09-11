@@ -16,6 +16,7 @@ import { TypesService } from './services/types.service';
 import { LoginModalComponent } from './component/login-modal/login-modal.component';
 import { AuthService } from './services/auth.service';
 import { ConfirmModalComponent } from './component/confirm-modal/confirm-modal.component';
+import { ProcessoTjFieldModule } from './process-tj-field/processo-tj-field.module';
 
 const MY_FORMATS = {
   parse: {
@@ -47,6 +48,7 @@ const MY_FORMATS = {
     MatDatepickerModule,
     MatNativeDateModule,
     MatCheckboxModule,
+    ProcessoTjFieldModule,
   ],
   declarations: [
     AppComponent,
